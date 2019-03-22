@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553209518 source:/home/alumno/sm/laboratorio1/clase02/main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+
