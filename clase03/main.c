@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-float calculateArea(float radius);
 float requestFloat(void);
+float calculateArea(float radius);
 
 int main()
 {
@@ -19,12 +19,21 @@ int main()
     printf("The area of the circle is %f",area);
     return 0;
 }
-
+/**
+ * \brief Input radius of the circle and output the area
+ * \return Area of the circle
+ *
+ */
 float calculateArea(float radius)
 {
     return radius*M_PI;
 }
-
+/**
+ * \brief Request to the user to input the radius of a circle
+ * \param Radius of a circle in float
+ * \return the number requested to the user
+ *
+ */
 float requestFloat()
 {
     float number;
