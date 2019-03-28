@@ -16,28 +16,41 @@ int main()
     float area;
     valueEntered=requestFloat();
     area=calculateArea(valueEntered);
-    printf("The area of the circle is %f",area);
+    printf("The area of the circle is %.2f",area);
     return 0;
 }
 /**
+<<<<<<< Updated upstream
  * \brief Input radius of the circle and output the area
  * \return Area of the circle
+=======
+ * \brief Input radius, output circle area
+ * \param Radius of the circle in float
+ * \return Area of the circle in float
+>>>>>>> Stashed changes
  *
  */
 float calculateArea(float radius)
 {
-    return radius*M_PI;
+    return radius*radius*M_PI;
 }
+<<<<<<< Updated upstream
 /**
  * \brief Request to the user to input the radius of a circle
  * \param Radius of a circle in float
  * \return the number requested to the user
+=======
+
+/**
+ * \brief Request a number to the user
+ * \return User inputed number
+>>>>>>> Stashed changes
  *
  */
 float requestFloat()
 {
     float number;
-    printf("Please, enter a number: ");
+    printf("Please, enter circle radius: ");
     scanf("%f",&number);
     return number;
 }
