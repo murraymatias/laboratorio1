@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1553820527 source:/home/alumno/sm/laboratorio1/clase04/library.c
+	<stdio.h>
+
+1553820527 source:/home/alumno/sm/laboratorio1/clase04/main.c
+	<stdio.h>
+	<stdlib.h>
+	"library.h"
+
+1553820527 /home/alumno/sm/laboratorio1/clase04/library.h
+
