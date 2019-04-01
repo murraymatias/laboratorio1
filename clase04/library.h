@@ -2,6 +2,6 @@
 #define LIBRARY_H_INCLUDED
 
 void test(void);
-int getNumber(int*pResult,int chances,int max, int min,char*pMsg,char*pErrorMsj);
+int getNumber(int*pResult,int chances,int max, int min,char*msg,char*errorMsj);
 
 #endif // LIBRARY_H_INCLUDED

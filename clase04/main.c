@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "library.h"
+#include "utn.h"
 
 int main()
 {
     int result;
     //printf("Hello world!\n");
-    getNumber(&result,5,100,1,"Ingrese un numero entre 1 y 100: \n","Error, el numero debe estar entre 1 y 100: \n");
+    utn_getNumber(&result,"ingrese un numero entre 1 y 10:\n","Error, debe ingresar un numero entre 1 y 10:\n",1,10,5);
     printf("El numero ingresado es: %d",result);
     return 0;
 }

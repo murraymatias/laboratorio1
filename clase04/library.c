@@ -5,22 +5,28 @@ void test(void)
     printf("test function.");
 }
 
-int getNumber(int*pResult,int chances,int max, int min,char*pMsg,char*pErrorMsj)
+int getNumber(int*pResult,int chances,int max, int min,char*msg,char*errorMsj)
 {
     int number;
-    //int ret=-1;
+    int ret=-1;
     int attempts=0;
 
-    printf("%s",pMsg);
-    scanf("%d",&number);
-
-    while((number<min||number>max)&&attempts<chances)
+    while(attempts<chances)
     {
-        printf("%s",pErrorMsj);
+        printf(msg);
         scanf("%d",&number);
+        if(number<max&&number>min)
+        {
+            *pResult=number;
+            ret=0;
+            break;
+        }
+        else
+        {
+            printf(errorMsj);
+        }
         attempts++;
     }
-    *pResult=number;
 
-    return 0;
+    return ret;
 }
