@@ -11,8 +11,8 @@ int main()
 {
     int option;
     char names[LIST_LEN][64];
-    //char buffer[64];
-    int i;
+    char buffer[64];
+    int i,index;
     for(i=0;i<LIST_LEN;i++)
     {
         names[i][0]='\0';
@@ -30,18 +30,34 @@ int main()
         {
             case 1:
             {
+                printf("Agregar nombre\n");
+                if(searchFree(&index,names,LIST_LEN)==0)
+                {
+                    printf("Lugar libre %d\n",index);
+                    getString(buffer,"Nombre: ","Error",1,64,10);
+                    strncpy(names[index],buffer,64);
+                }
                 break;
             }
             case 2:
             {
+                for(i=0;i<10;i++)
+                {
+                    printf("Nombre %s en %d\n",names[i],i);
+                }
                 break;
             }
             case 3:
             {
+                printf("Ordenar por nombre\n");
                 break;
             }
             case 4:
             {
+                getString(buffer,"Ingrese nombre: ","Error",1,64,10);
+                searchName(buffer,names,LIST_LEN,&index);
+                printf("Nombre en posicion %d\n",index);
+                names[index][0]='\0';
                 break;
             }
         }
