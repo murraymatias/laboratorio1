@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1556241272 source:/home/alumno/Documentos/sm/laboratorio1/simParcial/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Screen.h"
+	"Publication.h"
+	"utn.h"
+
+1556231232 source:/home/alumno/Documentos/sm/laboratorio1/simParcial/Publication.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Publication.h"
+	"Screen.h"
+
+1556238643 /home/alumno/Documentos/sm/laboratorio1/simParcial/utn.h
+
+1556231086 /home/alumno/Documentos/sm/laboratorio1/simParcial/Publication.h
+
+1556238754 source:/home/alumno/Documentos/sm/laboratorio1/simParcial/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+
+1556236375 /home/alumno/Documentos/sm/laboratorio1/simParcial/Screen.h
+
+1556241222 source:/home/alumno/Documentos/sm/laboratorio1/simParcial/Screen.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"Screen.h"
+	"Publication.h"
+

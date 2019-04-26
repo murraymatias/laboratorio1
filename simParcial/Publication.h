@@ -12,4 +12,10 @@ typedef struct
     int idScreen;
 }Publication;
 
+void pub_init(Publication publications[],int max);
+
+void pub_show(Publication publications[],int max);
+
+int pub_searchFree(Publication publication[],int max);
+
 #endif // PUBLICATION_H_INCLUDED
