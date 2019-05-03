@@ -14,10 +14,18 @@ typedef struct
 
 void scr_init(Screen screens[],int max);
 
+void scr_printByIndex(Screen screens[],int index);
+
 void scr_show(Screen screens[],int max);
 
 int scr_searchFree(Screen screens[],int max);
 
 int scr_new(Screen screens[],int max);
+
+int scr_getById(Screen screens[],int id,int max);
+
+int scr_update(Screen screens[],int max);
+
+int scr_selectScreen(Screen *screens,int lenScr);
 
 #endif // SCREEN_H_INCLUDED
