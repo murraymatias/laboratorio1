@@ -16,12 +16,12 @@ void scr_init(Screen screens[],int max)
     int i;
     for(i=0; i<max; i++)
     {
-        screens[i].id=0;
+        screens[i].id=-1;
         screens[i].isEmpty=1;
         screens[i].name[1]='\0';
         screens[i].address[1]='\0';
-        screens[i].price=0;
-        screens[i].type=0;
+        screens[i].price=-1;
+        screens[i].type=-1;
     }
     return;
 }
@@ -195,5 +195,22 @@ int scr_selectScreen(Screen *screens,int lenScr)
         printf("\nInvalid ID");
     }
 
+    return ret;
+}
+
+int scr_delete(Screen screens[],int max)
+{
+    int ret=-1;
+    int auxId;
+    utn_getInt(&auxId,"\nIngrese el id de la pantalla a modificar: ","\nNumero invalido",1,9999,10);
+    if(scr_getById(screens,auxId,100)>=0)
+    {
+        screens[auxId].isEmpty=1;
+        ret=0;
+    }
+    else
+    {
+        printf("\nNo existe pantalla con el id ingresado");
+    }
     return ret;
 }

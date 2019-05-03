@@ -7,6 +7,7 @@
 int main()
 {
     Screen screens[100];
+    Publication publications[1000];
     scr_init(screens,100);
     while(1)
     {
@@ -32,6 +33,7 @@ int main()
             {
                 /*Baja de pantalla: Se ingresa el ID de la pantalla, se eliminará la pantalla junto con todas
                 las contrataciones de publicidad para esta pantalla.*/
+                scr_delete(screens,100);
                 break;
             }
             case 4:
@@ -40,6 +42,7 @@ int main()
                 elija la pantalla donde se quiere publicar, ingresando su ID. Luego se pedirán los datos
                 asociados a la publicidad: cuit del cliente, cantidad de días que dura la publicación y
                 nombre del archivo de video (p.ej. Video1.avi).*/
+                pub_new(publications,screens,1000,100);
                 break;
             }
             case 5:

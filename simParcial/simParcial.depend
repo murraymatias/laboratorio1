@@ -34,3 +34,40 @@
 	"Screen.h"
 	"Publication.h"
 
+1556890688 source:d:\venv\laboratorio1\simparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Screen.h"
+	"Publication.h"
+	"utn.h"
+
+1556881557 d:\venv\laboratorio1\simparcial\screen.h
+
+1556881557 d:\venv\laboratorio1\simparcial\publication.h
+	"Screen.h"
+
+1556881557 d:\venv\laboratorio1\simparcial\utn.h
+
+1556890688 source:d:\venv\laboratorio1\simparcial\publication.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"Publication.h"
+	"Screen.h"
+
+1556890738 source:d:\venv\laboratorio1\simparcial\screen.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"Screen.h"
+	"Publication.h"
+
+1556881557 source:d:\venv\laboratorio1\simparcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+

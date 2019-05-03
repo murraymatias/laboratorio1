@@ -45,7 +45,7 @@ void pub_show(Publication publications[],Screen screens[],int lenPublications,in
         if(!publications[i].isEmpty)
         {
             screenPosition=scr_getById(screens,publications[i].idScreen,lenScreens);
-            printf("Id: %d\nCUIT: %s\nDays: %d\nFile: %s\nScreen: %s\n",  publications[i].id,
+            printf("Id: %d\nCUIT: %s\nDays: %d\nFile: %s\nScreen: %s\n",    publications[i].id,
                                                                             publications[i].cuit,
                                                                             publications[i].days,
                                                                             publications[i].file,

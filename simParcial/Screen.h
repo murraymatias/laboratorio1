@@ -28,4 +28,6 @@ int scr_update(Screen screens[],int max);
 
 int scr_selectScreen(Screen *screens,int lenScr);
 
+int scr_delete(Screen screens[],int max);
+
 #endif // SCREEN_H_INCLUDED
