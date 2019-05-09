@@ -337,3 +337,23 @@ int autor_listar(Autor array[], int size)                      //cambiar autor
     }
     return retorno;
 }
+int autor_select(Autor *arrayAutor,int lenArray)
+{
+    int ret=-1;
+    int bufferIdAutor;
+    int bufferPos=-1;
+    printf("\nSeleccione un autor por su id: ");
+    autor_listar(arrayAutor,lenArray);
+    utn_getUnsignedInt("Ingrese id del autor\n","Error\n",1,99,1,9999,10,&bufferIdAutor);
+    autor_buscarID(arrayAutor,lenArray,bufferIdAutor,&bufferPos);
+    if(bufferPos>=0)
+    {
+        ret=bufferIdAutor;
+    }
+    else
+    {
+        printf("\nId invalido");
+    }
+
+    return ret;
+}

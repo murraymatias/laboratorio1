@@ -165,6 +165,7 @@ int libro_alta(Libro array[], int size, int* contadorID)                        
             (*contadorID)++;
             array[posicion].idUnico=*contadorID;                                                       //campo ID
             array[posicion].isEmpty=0;
+            //autor_select(arrayAutor,lenAutor);
             utn_getUnsignedInt("\ngetUnsignedInt: ","\nError",1,sizeof(int),1,1,1,&array[posicion].autor);           //mensaje + cambiar campo autor
             utn_getName("getName\n: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre);                      //mensaje + cambiar campo nombre
             printf("\nPosicion: %d\n ID: %d\n autor: %d\n nombre: %s",

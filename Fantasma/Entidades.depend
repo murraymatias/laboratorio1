@@ -156,3 +156,52 @@
 
 1557360683 /home/alumno/Documentos/sm/Fantasma/libro.h
 
+1557372584 source:d:\sm\laboratorio1\fantasma\autor.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"autor.h"
+
+1557372584 d:\sm\laboratorio1\fantasma\utn.h
+
+1557372584 d:\sm\laboratorio1\fantasma\autor.h
+
+1557372584 source:d:\sm\laboratorio1\fantasma\libro.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"autor.h"
+	"utn.h"
+	"libro.h"
+
+1557372584 d:\sm\laboratorio1\fantasma\libro.h
+
+1557373240 source:d:\sm\laboratorio1\fantasma\main.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"autor.h"
+	"libro.h"
+	"menu.h"
+	"fantasma.h"
+
+1557372584 d:\sm\laboratorio1\fantasma\menu.h
+
+1557372584 d:\sm\laboratorio1\fantasma\fantasma.h
+
+1557372584 source:d:\sm\laboratorio1\fantasma\menu.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"libro.h"
+	"autor.h"
+
+1557372584 source:d:\sm\laboratorio1\fantasma\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+

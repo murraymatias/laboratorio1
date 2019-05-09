@@ -24,6 +24,7 @@ int autor_bajaValorRepetidoInt(Autor array[], int sizeArray, int valorBuscado);
 int autor_modificar(Autor array[], int sizeArray);                                //cambiar autor
 int autor_ordenarPorString(Autor array[],int size);                              //cambiar autor
 int autor_listar(Autor array[], int size);                      //cambiar autor
+int autor_select(Autor *arrayAutor,int lenArray);
 
 
 #endif // AUTOR_H_INCLUDED
